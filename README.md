@@ -1,0 +1,1 @@
+This repo is bound for testing new record-write service in openGemini.
