@@ -58,7 +58,7 @@ func main() {
 		}
 		tags := strings.Split(contents[0], ",")
 		fields := strings.Split(contents[1], ",")
-		timeField := contents[2]
+		timeField := strings.Trim(contents[2], "\n")
 		isFull := appendAll(tags, fields, timeField, mst)
 		if isFull {
 			res := toRecordBytes(mst)
